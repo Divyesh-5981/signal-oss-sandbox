@@ -1,0 +1,19 @@
+name: Signal-OSS Issue Triage
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - name: Triage issue
+        uses: Divyesh-5981/signal-oss@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
