@@ -14,6 +14,6 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     steps:
       - name: Triage issue
-        uses: Divyesh-5981/signal-oss@main
+        uses: Divyesh-5981/signal-oss@feat/action-hardening-repo-awareness
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
