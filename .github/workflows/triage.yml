@@ -17,4 +17,4 @@ jobs:
         uses: Divyesh-5981/signal-oss@feat/llm-tier3-adjudicator
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEMO_MODE: 'true'
+          model: 'none'
