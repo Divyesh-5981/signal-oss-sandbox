@@ -14,7 +14,7 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     steps:
       - name: Triage issue
-        uses: Divyesh-5981/signal-oss@feat/llm-tier3-adjudicator
+        uses: Divyesh-5981/signal-oss@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           model: 'none'
